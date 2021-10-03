@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+  font-family: "Product Sans";
+  src: url('https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2') format('woff2');
+}
+
+body{
+    font-family: "Product Sans";
+}
+
+/* Base Styles */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Utilities */
+.btn-primary{
+    display: inline-block;
+    background-color: #209E2E;
+}
+
+.splide__pagination__page{
+    background: transparent;
+    border: 1px solid #209E2E;
+}
+
+.splide__pagination__page.is-active{
+    background: #209E2E;
+}
+
+/* Header & Navbar */
+#main-header{
+    min-height: 100vh;
+    background-color: #00271C;
+}
+
+.navbar{
+    background-color: rgba(0, 51, 37, 80%);
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-menu li.active a{
+    font-weight: 500;
+}
+
+.nav-menu-close{
+    display: none;
+}
+
+.showcase{
+   background: url('../img/home-bg.png') no-repeat right; 
+}
