@@ -28,6 +28,10 @@ li{
     background-color: #209E2E;
 }
 
+.border-primary{
+    border-color: #209E2E;
+}
+
 .splide__pagination__page{
     background: transparent;
     border: 1px solid #209E2E;
@@ -45,6 +49,7 @@ li{
 
 .navbar{
     background-color: rgba(0, 51, 37, 80%);
+    z-index: 5;
 }
 
 .nav-toggle{
@@ -60,5 +65,39 @@ li{
 }
 
 .showcase{
-   background: url('../img/home-bg.png') no-repeat right; 
+   background: url('../img/home-bg.png') no-repeat bottom right; 
+}
+
+/* Services Section */
+#services{
+    background-color: #003627;
+    background-image: url('../img/services-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: -100%;
+}
+
+#services .processing h2{
+    color: #F77500;
+    border-color: #F77500;
+}
+
+#services .distribution h2{
+    color: #209E2E;
+    border-color: #209E2E;
+}
+
+#services .retail h2{
+    color: #F6BD00;
+    border-color: #F6BD00;
+}
+
+/* Call to action */
+#callToAct{
+    background: #333;
+}
+
+#callToAct h2{
+    line-height: 1.2;
 }

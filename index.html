@@ -11,7 +11,7 @@
 </head>
 <body>
     <header id='main-header' class="flex flex-col">
-        <nav class='navbar py-8'>
+        <nav class='navbar fixed w-full py-8'>
             <div class="max-w-5xl mx-auto flex justify-between">
                 <div class="nav-header flex justify-between items-center">
                     <a href="" class="nav-brand">
@@ -47,8 +47,10 @@
             </div>
         </nav>
 
+        <!-- Header Carousel Start -->
+
         <div class="showcase flex-1 flex items-center">
-            <div class="max-w-6xl mx-auto py-8">
+            <div class="max-w-6xl mx-auto pb-8 pt-32">
                 <div class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -170,12 +172,80 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Header Carousel End -->
             </div>
         </div>
     </header>
 
+    <section id="services">
+        <div class="py-24 max-w-6xl mx-auto md:flex justify-between">
+            <div class="processing">
+                <img src="assets/img/processing.png" alt="processing" class="rounded-md">
+
+                <h2 class="text-5xl font-semibold border-b py-8 my-8">Processing</h2>
+
+                <p class="text-white font-normal">We slaughter, dress and <br>package the chickens</p>
+            </div>
+
+            <div class="distribution">
+                <img src="assets/img/distribution.png" alt="processing" class="rounded-md">
+
+                <h2 class="text-5xl font-semibold border-b py-8 my-8">Distribution</h2>
+
+                <p class="text-white font-normal">We own the logistics <br>
+                    process through which products are <br>
+                    distributed and delivered from<br>
+                    our farms to the retail points <br> across Nigeria.
+                </p>
+            </div>
+
+            <div class="retail">
+                <img src="assets/img/retail.png" alt="processing" class="rounded-md">
+
+                <h2 class="text-5xl font-semibold border-b py-8 my-8">Retail</h2>
+
+                <p class="text-white font-normal">The spread of our retail points <br> makes our product 
+                    very easy to <br> access.</p>
+            </div>
+        </div>
+    </section>
 
 
+    <section id="callToAct">
+        <div class="max-w-6xl mx-auto">
+            <div class="md:flex items-center">
+                <div class='w-2/4 py-12'>
+                    <h2 class="text-5xl text-white font-semibold">
+                        Simple way <br> to order your <br> chicken faster
+                    </h2>
+
+                    <p class="my-8 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Nulla ac erat nibh. Ut molestie dictum dui, vitae sodales <br> nisi tincidunt quis. </p>
+
+                    <div>
+                        <button class="py-6 px-10 text-sm rounded-2xl btn-primary flex items-center text-white font-light mr-2">
+                            <img src="assets/img/icons/apple.svg" alt="ios" class="inline mr-2">
+
+                            <span class="text-xs">
+                                Download on 
+                            </span>
+                            <span class="text-xl">
+                                App Store
+                            </span>
+                        </button>
+                        <button class="py-6 px-10 text-sm rounded-2xl border border-primary font-light text-white">
+                            Get it on Play Store
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="w-2/4">
+                    <img src="assets/img/app-mock.png" alt="app mock">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
