@@ -32,6 +32,10 @@ li{
     border-color: #209E2E;
 }
 
+.text-secondary{
+    color: #00271C;
+}
+
 .splide__pagination__page{
     background: transparent;
     border: 1px solid #209E2E;
@@ -95,9 +99,13 @@ li{
 
 /* Call to action */
 #callToAct{
-    background: #333;
+    background: #171717;
 }
 
 #callToAct h2{
     line-height: 1.2;
+}
+
+#callToAct img{
+    top: -5%;
 }
