@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenfarms</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="flex flex-col header-sm">
+        <nav class='navbar fixed w-full py-8'>
+            <div class="max-w-5xl mx-auto flex justify-between">
+                <div class="nav-header flex justify-between items-center">
+                    <a href="index.html" class="nav-brand">
+                        <img src="assets/img/logo-dark.png" alt="logo">
+                    </a>
+
+                    <a href="" class="nav-toggle">
+                        <img src="assets/img/icons/icon-toggle.svg" alt="toggle">
+                    </a>
+                </div>
+
+                <div class="nav-menu-wrapper">
+                    <span class="nav-menu-close"></span>
+                    <ul class="nav-menu text-white flex space-x-14">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <div class="max-w-6xl mx-auto pb-8 pt-32">
+                <div class="text-center text-white">
+                    <h3 class="text-7xl font-semibold">About us</h3>
+                    <p class="text-xl mt-3">What we do</p>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="max-w-6xl mx-auto pt-32 pb-16">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-2/4">
+                    <img src="assets/img/office.png" alt="kenfarms hq" class="max-w-full rounded-lg">
+                </div>
+
+                <div class="md:w-2/4">
+                    <h5 class="text-white font-semibold text-5xl mb-5">KenFarms is pivoting</h5>
+                    <p class="text-gray-200 mb-4 text-justify text-lg">
+                        Up until now, KenFarms have been focused on egg production. A great deal of 
+                        success has been achieved in the line of business 
+                        Employing the crowdfunding model for capital, with the help of investors, we 
+                        were able to scale up our farm operations across multiple locations, with over 30-thousand-layer birds and 1, 800 crates of eggs harvested on a daily basis. 
+                        However, moving forward, KenFarms is changing its focus as a business. While 
+                        we still remain in the poultry business, we are pivoting from egg production to 
+                        meat production. 
+                    </p>
+                    <p class="text-gray-200 text-justify text-lg">
+                        KenFarms is repositioning to be a force in frozen chicken production in Nigeria, 
+                        and we have laid bare our strategy and process in the detailed document that 
+                        follows.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+
+            <div id='stats' class="py-14 mt-24">
+                <div class="bg-white rounded-md py-16 px-20 flex">
+                    <div class="text-center p-10 border-r">
+                        <img src="assets/img/icons/chicken.png" alt="chicken icon" class="mx-auto">
+                        <p class="text-secondary text-xl mt-8">Numbers of chicken sold</p>
+                        
+                        <h6 class="text-6xl font-semibold text-secondary mt-4">12k+</h6>
+                    </div>
+
+                    <div class="text-center p-10 border-r">
+                        <img src="assets/img/icons/eggs.png" alt="egg icon" class="mx-auto">
+                        <p class="text-secondary text-xl mt-8">Numbers of eggs sold</p>
+                        
+                        <h6 class="text-6xl font-semibold text-secondary mt-4">56k+</h6>
+                    </div>
+
+                    <div class="text-center p-10 border-r">
+                        <img src="assets/img/icons/farmer.png" alt="farmer icon" class="mx-auto">
+                        <p class="text-secondary text-xl mt-8">Numbers of farmers employed</p>
+                        
+                        <h6 class="text-6xl font-semibold text-secondary mt-4">53+</h6>
+                    </div>
+
+                    <div class="text-center p-10">
+                        <img src="assets/img/icons/corn.png" alt="corn icon" class="mx-auto">
+                        <p class="text-secondary text-xl mt-8">Tons of maize harvested</p>
+                        
+                        <h6 class="text-6xl font-semibold text-secondary mt-4">23k+</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Partnerships -->
+
+            <div id='partnerships'>
+                <div class="py-4 text-center">
+                    <h1 class="text-6xl text-white font-semibold">For partnerships</h1>
+                    <p class="text-xl text-white mt-4">Join our exclusive community</p>
+                </div>
+
+                <div class="subscribe-form py-10 relative flex max-w-5xl mx-auto">
+                    <input type="email" placeholder="Email address here" class="bg-white px-4 py-5 outline-none text-gray-600">
+                    <button class="p-4 bg-primary text-white">Join now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="main-footer">
+        <div class="max-w-6xl mx-auto pb-8 pt-16 md:flex">
+            <div class="footer-sec">
+                <p class="text-primary text-sm font-semibold mb-3">Company</p>
+                <div>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">About</a>
+                    <a href="faq.html" class="block text-gray-200 text-sm mb-3">FAQ</a>
+                    <a href="login.html" class="block text-gray-200 text-sm mb-3">Get Started</a>
+                </div>
+            </div>
+
+            <div class="footer-sec">
+                <p class="text-primary text-sm font-semibold mb-3">Support</p>
+                <div>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Distributorship</a>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Delivery Schedule</a>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Online Enquiry</a>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Get a Call</a>
+                </div>
+            </div>
+
+            <div class="footer-sec">
+                <p class="text-primary text-sm font-semibold mb-3">Contact</p>
+                <div>
+                    <p href="about.html" class="block text-gray-200 text-sm mb-3">
+                        Suite 20 Legislative Arcade, <br>
+                        New Yidi Road, <br>
+                        Ilorin, Kwara State. <br> <br> 
+                        234-811-811-4093 <br> <br>
+                        info@kenfarms.ng
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-1 text-center">
+                <h1 class="text-3xl text-white mb-4 font-semibold">Subscribe to <br>our Newsletter</h1>
+
+                <div class="subscribe-form relative flex max-w-4xl mx-auto">
+                    <input type="email" placeholder="Email address here" class="bg-white p-4 outline-none text-gray-600">
+                    <button class="p-4 bg-primary text-white">Join now</button>
+                </div>
+
+                <div class="socials my-5">
+                    <a href='#' class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href='#' class="social"><i class="fab fa-instagram"></i></a>
+                    <a href='#' class="social"><i class="fab fa-twitter"></i></a>
+                    <a href='#' class="social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto footer-bottom pt-4 pb-8 border-t border-gray-500 flex justify-between items-center">
+            <p class="text-gray-200 text-sm">Powered by: Agritrust (Irewolede) <br> Agricultural Cooperative Society Limited (LCSC 16936)</p>
+
+            <p class="text-gray-200 text-sm">
+                Copyright © 2021 Kenfarms and Agrovet Limited [RC - 1607762].  All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
