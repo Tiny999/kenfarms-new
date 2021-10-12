@@ -22,6 +22,11 @@ li{
     list-style: none;
 }
 
+h3,
+h1{
+    line-height: 1.2 !important;
+}
+
 /* Utilities */
 .btn-primary{
     display: inline-block;
@@ -68,6 +73,16 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-md .header-content{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/md-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 .navbar{
@@ -154,6 +169,28 @@ main{
     border-radius: 20px;
 }
 
+.header-content .subscribe-form .input-group{
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    width: 655px;
+    position: relative;
+    left: 30px;
+}
+.header-content .subscribe-form .input-group input{
+    width: 100%;
+    left: 0;
+}
+.header-content .subscribe-form .input-group button{
+    width: auto;
+}
+.header-content .subscribe-form button{
+    width: 35%;
+}
+
+#furtherHelp{
+    background: #121212;
+}
+
 /* Footer */
 #main-footer{
     background-color: #00271C;
@@ -189,3 +226,42 @@ main{
     border-radius: 50%;
     margin-right: 7px;
 }
+
+
+
+#accordion{
+    position: relative;
+}
+
+  #accordion .card .head{
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    border-bottom: 1px solid #5E5E5E;
+    color: #fff;
+  }
+  
+  #accordion .card .arrow{
+    font-size: 18px;
+    transition: 0.25s ease;
+    color: #fff;
+  }
+  
+  #accordion .card .head:hover, #accordion .card .active{
+    cursor: pointer;
+  }
+  
+  #accordion .arrow-animate{
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  
+  #accordion .content{
+    color: #FFFFFF;
+    display: none;
+    padding: 20px 0;
+  }
+  

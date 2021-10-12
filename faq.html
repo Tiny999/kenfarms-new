@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="flex flex-col header-sm">
+    <header class="flex flex-col header-md">
         <nav class='navbar fixed w-full py-8'>
             <div class="max-w-5xl mx-auto flex justify-between">
                 <div class="nav-header flex justify-between items-center">
@@ -26,7 +26,7 @@
                 <div class="nav-menu-wrapper">
                     <span class="nav-menu-close"></span>
                     <ul class="nav-menu text-white flex space-x-14">
-                        <li class="active">
+                        <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
@@ -38,7 +38,7 @@
                         <li>
                             <a href="blog.html">Blog</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="faq.html">FAQ</a>
                         </li>
                     </ul>
@@ -50,8 +50,18 @@
         <div class="header-content">
             <div class="max-w-6xl mx-auto pb-8 pt-32">
                 <div class="text-center text-white">
-                    <h3 class="text-7xl font-semibold">About us</h3>
-                    <p class="text-xl mt-3">What we do</p>
+                    <h3 class="text-7xl font-semibold">Frequently Asked <br> Questions</h3>
+                </div>
+
+                <div class="subscribe-form py-10 relative flex w-full mx-auto">
+                    <div class="input-group flex items-center bg-white pl-6">
+                        <button>
+                            <img src="assets/img/icons/icon-search.svg" alt="search icon">
+                        </button>
+                        
+                        <input type="email" placeholder="Ask a question" class="bg-transparent pl-4 py-5 outline-none text-gray-600">
+                    </div>
+                    <button class="p-4 bg-primary text-white">Search</button>
                 </div>
             </div>
         </div>
@@ -59,81 +69,64 @@
     </header>
 
     <main>
-        <div class="max-w-6xl mx-auto pt-32 pb-16">
-            <div class="md:flex items-center justify-between">
-                <div class="md:w-2/4">
-                    <img src="assets/img/office.png" alt="kenfarms hq" class="max-w-full rounded-lg">
+        <div class="max-w-5xl mx-auto py-32">
+            <div class="text-center mb-12">
+                <h6 class="text-3xl text-white font-semibold mb-4">General</h6>
+                <p class="text-lg font-light text-gray-200">KenFarms overriding ambition is to make chicken the most preferred <br> protein source ahead of beef.</p>
+            </div>  
+
+            <div id="accordion">
+                <div class="card">
+                    <div class="head">
+                      <h2>What is Kenfresh Chickens</h2>
+                      <i class="fas fa-angle-down arrow"></i>
+                    </div>
+                    <div class="content">
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
                 </div>
-
-                <div class="md:w-2/4">
-                    <h5 class="text-white font-semibold text-5xl mb-5">KenFarms is pivoting</h5>
-                    <p class="text-gray-200 mb-4 text-justify text-lg">
-                        Up until now, KenFarms have been focused on egg production. A great deal of 
-                        success has been achieved in the line of business 
-                        Employing the crowdfunding model for capital, with the help of investors, we 
-                        were able to scale up our farm operations across multiple locations, with over 30-thousand-layer birds and 1, 800 crates of eggs harvested on a daily basis. 
-                        However, moving forward, KenFarms is changing its focus as a business. While 
-                        we still remain in the poultry business, we are pivoting from egg production to 
-                        meat production. 
-                    </p>
-                    <p class="text-gray-200 text-justify text-lg">
-                        KenFarms is repositioning to be a force in frozen chicken production in Nigeria, 
-                        and we have laid bare our strategy and process in the detailed document that 
-                        follows.
-                    </p>
+                <div class="card">
+                    <div class="head">
+                      <h2>How it works</h2>
+                      <i class="fas fa-angle-down arrow"></i>
+                    </div>
+                    <div class="content">
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Stats Section -->
-
-            <div id='stats' class="py-14 mt-24">
-                <div class="bg-white rounded-md py-16 px-20 flex">
-                    <div class="text-center p-10 border-r">
-                        <img src="assets/img/icons/chicken.png" alt="chicken icon" class="mx-auto">
-                        <p class="text-secondary text-xl mt-8">Numbers of chicken sold</p>
-                        
-                        <h6 class="text-6xl font-semibold text-secondary mt-4">12k+</h6>
+                <div class="card">
+                    <div class="head">
+                      <h2>How to become a distributor</h2>
+                      <i class="fas fa-angle-down arrow"></i>
                     </div>
-
-                    <div class="text-center p-10 border-r">
-                        <img src="assets/img/icons/eggs.png" alt="egg icon" class="mx-auto">
-                        <p class="text-secondary text-xl mt-8">Numbers of eggs sold</p>
-                        
-                        <h6 class="text-6xl font-semibold text-secondary mt-4">56k+</h6>
+                    <div class="content">
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
-
-                    <div class="text-center p-10 border-r">
-                        <img src="assets/img/icons/farmer.png" alt="farmer icon" class="mx-auto">
-                        <p class="text-secondary text-xl mt-8">Numbers of farmers employed</p>
-                        
-                        <h6 class="text-6xl font-semibold text-secondary mt-4">53+</h6>
+                </div>
+                <div class="card">
+                    <div class="head">
+                      <h2>Delivery Process</h2>
+                      <i class="fas fa-angle-down arrow"></i>
                     </div>
-
-                    <div class="text-center p-10">
-                        <img src="assets/img/icons/corn.png" alt="corn icon" class="mx-auto">
-                        <p class="text-secondary text-xl mt-8">Tons of maize harvested</p>
-                        
-                        <h6 class="text-6xl font-semibold text-secondary mt-4">23k+</h6>
+                    <div class="content">
+                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                 </div>
             </div>
 
-
-            <!-- Partnerships -->
-
-            <div id='partnerships'>
-                <div class="py-4 text-center">
-                    <h1 class="text-6xl text-white font-semibold">For partnerships</h1>
-                    <p class="text-xl text-white mt-4">Join our exclusive community</p>
-                </div>
-
-                <div class="subscribe-form py-10 relative flex max-w-5xl mx-auto">
-                    <input type="email" placeholder="Email address here" class="bg-white px-4 py-5 outline-none text-gray-600">
-                    <button class="p-4 bg-primary text-white">Join now</button>
-                </div>
-            </div>
         </div>
     </main>
+
+    <section id='furtherHelp'>
+        <div class="max-w-4xl mx-auto py-24 text-center">
+            <h1 class="text-white font-semibold text-7xl mb-10">
+                Would you need any <br>further help?
+            </h1>
+            <a href="contact.html" class="py-5 inline-block px-8 rounded-2xl bg-primary text-white">
+                Contact Support
+            </a>
+        </div>
+    </section>
 
     <!-- Footer -->
 
@@ -199,7 +192,6 @@
 
 
 
-    
     <script src="assets/js/splide.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
