@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenfarms</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="flex flex-col header-md">
+        <nav class='navbar fixed w-full py-8'>
+            <div class="max-w-5xl mx-auto flex justify-between">
+                <div class="nav-header flex justify-between items-center">
+                    <a href="index.html" class="nav-brand">
+                        <img src="assets/img/logo-dark.png" alt="logo">
+                    </a>
+
+                    <a href="" class="nav-toggle">
+                        <img src="assets/img/icons/icon-toggle.svg" alt="toggle">
+                    </a>
+                </div>
+
+                <div class="nav-menu-wrapper">
+                    <span class="nav-menu-close"></span>
+                    <ul class="nav-menu text-white flex space-x-14">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="active">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <div class="max-w-6xl mx-auto pb-8 pt-32">
+                <div class="text-center text-white">
+                    <h3 class="text-7xl font-semibold">Get in touch!</h3>
+                    <p class="text-xl mt-3">Contact us for more enquiries</p>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="max-w-5xl mx-auto">
+            <div class="contact rounded-2xl p-20">
+                <div class="md:flex justify-between space-x-6">
+                    <div class="p-12 rounded-2xl text-white text-center flex flex-col justify-center items-center w-full">
+                        <img src="assets/img/icons/icon-location.svg" alt="location" class="mb-4">
+                        <p class="text-sm">
+                            Suite 20 Legislative Arcade, <br> New Yidi Road, Ilorin, <br>Kwara State.
+                        </p>
+                    </div>
+                    <div class="p-12 rounded-2xl text-white text-center flex flex-col justify-center items-center bg-dark-primary w-full">
+                        <img src="assets/img/icons/icon-email.svg" alt="emaicon-email.svg" class="mb-4">
+                        <p class="text-sm">
+                            info@kenfarms.ng <br>kenfarms11@gmail.com
+                        </p>
+                    </div>
+                    <div class="p-12 rounded-2xl text-white text-center flex flex-col justify-center items-center w-full">
+                        <img src="assets/img/icons/icon-phone.svg" alt="picon-phone.svg" class="mb-4">
+                        <p class="text-sm">
+                            +234-811-811-4093 <br> +234-803-099-0904
+                        </p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="bg-white rounded-2xl py-14 px-20 mt-28">
+                    <div class="flex justify-between space-x-8">
+                        <div class="w-full">
+                            <div class="mb-6">
+                                <label for="name" class="font-semibold text-secondary">Your name</label>
+                                <input type="text"name='name' placeholder="e.g. Alex John" class="bg-transparent border-2 border-gray-200 p-6 block rounded-2xl w-full outline-none mt-3">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="font-semibold text-secondary">Email</label>
+                                <input type="email" name="email" placeholder="Your email here" class="bg-transparent border-2 border-gray-200 p-6 block rounded-2xl w-full outline-none mt-3">
+                            </div>
+                            <div class="mb-6">
+                                <label for="phone" class="font-semibold text-secondary">Phone number</label>
+                                <input type="tel" name="phone" placeholder="+234 000 0000 000" class="bg-transparent border-2 border-gray-200 p-6 block rounded-2xl w-full outline-none mt-3">
+                            </div>
+                        </div>
+
+                        <div class="w-full">
+                            <div>
+                                <label for="message" class="font-semibold text-secondary">Message</label>
+                                <textarea type="text" name="message" placeholder="Your message here" class="bg-transparent border-2 border-gray-200 p-6 block rounded-2xl w-full outline-none mt-3" rows='12'></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-8">
+                        <button type="submit" class="py-5 px-16 text-white bg-primary rounded-2xl">Send Message</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="main-footer">
+        <div class="max-w-6xl mx-auto pb-8 pt-16 md:flex">
+            <div class="footer-sec">
+                <p class="text-primary text-sm font-semibold mb-3">Company</p>
+                <div>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">About</a>
+                    <a href="faq.html" class="block text-gray-200 text-sm mb-3">FAQ</a>
+                    <a href="login.html" class="block text-gray-200 text-sm mb-3">Get Started</a>
+                </div>
+            </div>
+
+            <div class="footer-sec">
+                <p class="text-primary text-sm font-semibold mb-3">Support</p>
+                <div>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Distributorship</a>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Delivery Schedule</a>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Online Enquiry</a>
+                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Get a Call</a>
+                </div>
+            </div>
+
+            <div class="footer-sec">
+                <p class="text-primary text-sm font-semibold mb-3">Contact</p>
+                <div>
+                    <p href="about.html" class="block text-gray-200 text-sm mb-3">
+                        Suite 20 Legislative Arcade, <br>
+                        New Yidi Road, <br>
+                        Ilorin, Kwara State. <br> <br> 
+                        234-811-811-4093 <br> <br>
+                        info@kenfarms.ng
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-1 text-center">
+                <h1 class="text-3xl text-white mb-4 font-semibold">Subscribe to <br>our Newsletter</h1>
+
+                <div class="subscribe-form relative flex max-w-4xl mx-auto">
+                    <input type="email" placeholder="Email address here" class="bg-white p-4 outline-none text-gray-600">
+                    <button class="p-4 bg-primary text-white">Join now</button>
+                </div>
+
+                <div class="socials my-5">
+                    <a href='#' class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href='#' class="social"><i class="fab fa-instagram"></i></a>
+                    <a href='#' class="social"><i class="fab fa-twitter"></i></a>
+                    <a href='#' class="social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto footer-bottom pt-4 pb-8 border-t border-gray-500 flex justify-between items-center">
+            <p class="text-gray-200 text-sm">Powered by: Agritrust (Irewolede) <br> Agricultural Cooperative Society Limited (LCSC 16936)</p>
+
+            <p class="text-gray-200 text-sm">
+                Copyright © 2021 Kenfarms and Agrovet Limited [RC - 1607762].  All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/splide.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

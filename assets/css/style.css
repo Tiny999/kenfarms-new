@@ -49,6 +49,10 @@ h1{
     background-color: #209E2E;
 }
 
+.bg-dark-primary{
+    background: #00271C;
+}
+
 .splide__pagination__page{
     background: transparent;
     border: 1px solid #209E2E;
@@ -104,6 +108,7 @@ h1{
 
 main{
     background-color: #171717;
+    position: relative;
 }
 
 .showcase{
@@ -190,6 +195,23 @@ main{
 #furtherHelp{
     background: #121212;
 }
+
+
+/* Contact Page */
+.contact{
+    background: #003627;
+    position: relative;
+    top: -120px;
+}
+
+#contact-form textarea,
+#contact-form input{
+    background-color: rgba(32, 158, 46, 0.05);
+}
+
+
+
+
 
 /* Footer */
 #main-footer{
