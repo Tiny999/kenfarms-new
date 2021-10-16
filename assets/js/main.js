@@ -12,6 +12,15 @@
         }
         
     });
+
+    $('#nav-toggle').click(function(e){
+      e.preventDefault();
+      $('.nav-menu-wrapper').toggleClass('show')
+    })
+
+    $('.nav-menu-close a').click(function(){
+      $('.nav-menu-wrapper').removeClass('show')
+    })
   });
 
 document.addEventListener( 'DOMContentLoaded', function () {

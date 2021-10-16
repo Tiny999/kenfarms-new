@@ -12,37 +12,45 @@
 </head>
 <body>
     <header id='main-header' class="flex flex-col">
-        <nav class='navbar fixed w-full py-8'>
-            <div class="max-w-5xl mx-auto flex justify-between">
-                <div class="nav-header flex justify-between items-center">
-                    <a href="index.html" class="nav-brand">
+        <nav class='navbar fixed w-full py-8 px-5'>
+            <div class="md:max-w-5xl mx-auto flex justify-between">
+                <div class="nav-header w-full flex justify-between items-center">
+                    <a href="index.html" class="nav-brand inline-block">
                         <img src="assets/img/logo-dark.png" alt="logo">
                     </a>
 
-                    <a href="" class="nav-toggle">
+                    <a href="#" id='nav-toggle' class="nav-toggle">
                         <img src="assets/img/icons/icon-toggle.svg" alt="toggle">
                     </a>
                 </div>
 
                 <div class="nav-menu-wrapper">
-                    <span class="nav-menu-close"></span>
-                    <ul class="nav-menu text-white flex space-x-14">
-                        <li class="active">
+                    <div class="nav-menu-close border-b md:border-0">
+                        <a href="#">
+                            <img src="assets/img/icons/icon-cancel.svg" alt="close">
+                        </a>
+                    </div>
+                    <ul class="nav-menu text-white md:flex md:space-x-14">
+                        <li class="active border-b md:border-0">
                             <a href="index.html">Home</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="about.html">About</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="contact.html">Contact</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="blog.html">Blog</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="faq.html">FAQ</a>
                         </li>
                     </ul>
+
+                    <div class="mt-auto md:hidden text-center text-white pb-6 text-sm">
+                        <p>©2021 Kenfarms and Agrovet. <br> All Rights Reserved</p>
+                    </div>
                 </div>
 
             </div>
@@ -50,122 +58,121 @@
 
         <!-- Header Carousel Start -->
 
-        <div class="showcase flex-1 flex items-center">
-            <div class="max-w-6xl mx-auto pb-8 pt-32">
+        <div class="showcase flex-1 md:flex items-center">
+            <div class="md:max-w-6xl mx-auto pb-8 pt-32">
                 <div class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div id="slide1" class="flex items-center">
-                                    <div class="w-2/5">
-                                        <h1 class="text-white text-7xl font-semibold">
-                                            KenFresh Processed Chicken
+                                <div id="slide1" class="flex flex-col md:flex-row items-center">
+                                    <div class="md:w-2/5 text-center md:text-left order-2 md:order-1">
+                                        <h1 class="text-white text-5xl md:text-7xl font-semibold">
+                                            KenFresh Processed <br class="md:hidden"> Chicken
                                         </h1>
 
-                                        <img src="assets/img/dash.png" alt="dash" class="ml-12 my-6">
+                                        <img src="assets/img/dash.png" alt="dash" class="md:ml-12 mx-auto my-6">
 
-                                        <p class="text-white text-xl font-thin">
-                                            KenFarms overriding ambition is to make chicken the most preferred protein source ahead of beef.
+                                        <p class="text-white text-lg md:text-xl font-thin">
+                                            KenFarms overriding ambition is to <br class="md:hidden"> make chicken the most preferred <br class="md:hidden"> protein source ahead of beef.
                                         </p>
     
-                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-12">
+                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-6 mb-12 md:mt-12 md:mb-0">
                                             Get Started
                                         </a>
                                     </div>
-                                    <div class="w-3/5">
-                                        <img src="assets/img/kenfresh-chicken.png" alt="kenfresh chicken" width="95%" class="mx-auto">
+                                    <div class="md:w-3/5 order-1 md:order-2 mb-6 md:mb-0">
+                                        <img src="assets/img/kenfresh-chicken.png" alt="kenfresh chicken" width="95%" class="md:mx-auto">
                                     </div>
                                 </div>
                             </li>
 
                             <li class="splide__slide">
-                                <div id="slide2" class="flex items-center justify-between">
-                                    <div class="w-2/5">
-                                        <h1 class="text-white text-7xl font-semibold">
-                                            KenFarms Fresh Eggs
-
+                                <div id="slide2" class="flex flex-col md:flex-row items-center">
+                                    <div class="md:w-2/5 text-center md:text-left order-2 md:order-1">
+                                        <h1 class="text-white text-5xl md:text-7xl font-semibold">
+                                            KenFarms <br class="md:hidden"> Fresh Eggs
                                         </h1>
 
-                                        <img src="assets/img/dash.png" alt="dash" class="ml-12 my-6">
+                                        <img src="assets/img/dash.png" alt="dash" class="md:ml-12 mx-auto my-6">
 
-                                        <p class="text-white text-xl font-thin">
-                                            Lorem ipsum dolor sit amet, consectetur ipiscing elit. Nullam semper ex vitae arcu n rhoncus, augue 
+                                        <p class="text-white text-lg md:text-xl font-thin">
+                                            Lorem ipsum dolor sit amet, consectetur <br class="md:hidden"> ipiscing elit. Nullam semper ex vitae arcu <br class="md:hidden"> n rhoncus, augue 
                                         </p>
     
-                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-12">
+                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-6 mb-12 md:mt-12 md:mb-0">
                                             Get Started
                                         </a>
                                     </div>
-                                    <div class="w-3/5">
+                                    <div class="md:w-3/5 order-1 md:order-2 mb-6 md:mb-0">
                                         <img src="assets/img/fresh-eggs.png" alt="fresh-eggs" width="85%" class="mx-auto">
                                     </div>
                                 </div>
                             </li>
 
                             <li class="splide__slide">
-                                <div id="slide3" class="flex items-center justify-between">
-                                    <div class="w-2/5">
-                                        <h1 class="text-white text-7xl font-semibold">
-                                            KenFarms Emirates Feeds
+                                <div id="slide3" class="flex flex-col md:flex-row items-center">
+                                    <div class="md:w-2/5 text-center md:text-left order-2 md:order-1">
+                                        <h1 class="text-white text-5xl md:text-7xl font-semibold">
+                                            KenFarms <br class="md:hidden"> Emirates <br class="md:hidden"> Feeds
                                         </h1>
 
-                                        <img src="assets/img/dash.png" alt="dash" class="ml-12 my-6">
+                                        <img src="assets/img/dash.png" alt="dash" class="md:ml-12 mx-auto my-6">
 
-                                        <p class="text-white text-xl font-thin">
-                                            Lorem ipsum dolor sit amet, consectetur ipiscing elit. Nullam semper ex vitae arcu n rhoncus, augue 
+                                        <p class="text-white text-lg md:text-xl font-thin">
+                                            Lorem ipsum dolor sit amet, consectetur <br class="md:hidden"> ipiscing elit. Nullam semper ex vitae arcu <br class="md:hidden"> n rhoncus, augue 
                                         </p>
     
-                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-12">
+                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-6 mb-12 md:mt-12 md:mb-0">
                                             Get Started
                                         </a>
                                     </div>
-                                    <div class="w-3/5">
+                                    <div class="md:w-3/5 order-1 md:order-2 mb-6 md:mb-0">
                                         <img src="assets/img/emirate-feed.png" alt="fresh-eggs" width="85%" class="mx-auto">
                                     </div>
                                 </div>
                             </li>
 
                             <li class="splide__slide">
-                                <div id="slide4" class="flex items-center">
-                                    <div class="w-2/5">
-                                        <h1 class="text-white text-7xl font-semibold">
-                                            KenFresh Maize Farm
+                                <div id="slide4" class="flex flex-col md:flex-row items-center">
+                                    <div class="md:w-2/5 text-center md:text-left order-2 md:order-1">
+                                        <h1 class="text-white text-5xl md:text-7xl font-semibold">
+                                            KenFresh <br class="md:hidden"> Maize <br class="md:hidden"> Farm
                                         </h1>
 
-                                        <img src="assets/img/dash.png" alt="dash" class="ml-12 my-6">
+                                        <img src="assets/img/dash.png" alt="dash" class="md:ml-12 mx-auto my-6">
 
-                                        <p class="text-white text-xl font-thin">
-                                            Lorem ipsum dolor sit amet, consectetur ipiscing elit. Nullam semper ex vitae arcu n rhoncus, augue 
+                                        <p class="text-white text-lg md:text-xl font-thin">
+                                            Lorem ipsum dolor sit amet, consectetur <br class="md:hidden"> ipiscing elit. Nullam semper ex vitae arcu <br class="md:hidden"> n rhoncus, augue 
                                         </p>
     
-                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-12">
+                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-6 mb-12 md:mt-12 md:mb-0">
                                             Get Started
                                         </a>
                                     </div>
-                                    <div class="w-3/5">
+                                    <div class="md:w-3/5 order-1 md:order-2 mb-6 md:mb-0">
                                         <img src="assets/img/maize-farm.png" alt="Maize farm" width="80%" class="mx-auto">
                                     </div>
                                 </div>
                             </li>
 
                             <li class="splide__slide">
-                                <div id="slide5" class="flex items-center">
-                                    <div class="w-2/5">
-                                        <h1 class="text-white text-7xl font-semibold">
-                                            KenFresh Staffs and Vehicles
+                                <div id="slide5" class="flex flex-col md:flex-row items-center">
+                                    <div class="md:w-2/5 text-center md:text-left order-2 md:order-1">
+                                        <h1 class="text-white text-5xl md:text-7xl font-semibold">
+                                            KenFresh <br class="md:hidden"> Staffs and <br class="md:hidden"> Vehicles
                                         </h1>
 
-                                        <img src="assets/img/dash.png" alt="dash" class="ml-12 my-6">
+                                        <img src="assets/img/dash.png" alt="dash" class="md:ml-12 mx-auto my-6">
 
-                                        <p class="text-white text-xl font-thin">
-                                            Lorem ipsum dolor sit amet, consectetur ipiscing elit. Nullam semper ex vitae arcu n rhoncus, augue 
+                                        <p class="text-white text-lg md:text-xl font-thin">
+                                            Lorem ipsum dolor sit amet, consectetur <br class="md:hidden"> ipiscing elit. Nullam semper ex vitae arcu <br class="md:hidden"> n rhoncus, augue 
                                         </p>
     
-                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-12">
+                                        <a href="register.html" class="btn-primary px-9 py-5 rounded-2xl text-white text-lg mt-6 mb-12 md:mt-12 md:mb-0">
                                             Get Started
                                         </a>
                                     </div>
-                                    <div class="w-3/5">
+                                    <div class="md:w-3/5 order-1 md:order-2 mb-6 md:mb-0">
                                         <img src="assets/img/staff.png" alt="Staff and vehicles" width="80%" class="mx-auto">
                                     </div>
                                 </div>
@@ -180,21 +187,21 @@
     </header>
 
     <section id="services">
-        <div class="py-24 max-w-6xl mx-auto md:flex justify-between">
-            <div class="processing">
+        <div class="py-24 max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between items-center">
+            <div class="processing mb-16 md:mb-0">
                 <img src="assets/img/processing.png" alt="processing" class="rounded-md">
 
-                <h2 class="text-5xl font-semibold border-b py-8 my-8">Processing</h2>
+                <h2 class="text-5xl font-semibold border-b py-8 md:my-8 my-6">Processing</h2>
 
-                <p class="text-white font-normal">We slaughter, dress and <br>package the chickens</p>
+                <p class="text-white text-lg font-normal">We slaughter, dress and <br>package the chickens</p>
             </div>
 
-            <div class="distribution">
+            <div class="distribution mb-16 md:mb-0">
                 <img src="assets/img/distribution.png" alt="processing" class="rounded-md">
 
-                <h2 class="text-5xl font-semibold border-b py-8 my-8">Distribution</h2>
+                <h2 class="text-5xl font-semibold border-b py-8 md:my-8 my-6">Distribution</h2>
 
-                <p class="text-white font-normal">We own the logistics <br>
+                <p class="text-white text-lg font-normal">We own the logistics <br>
                     process through which products are <br>
                     distributed and delivered from<br>
                     our farms to the retail points <br> across Nigeria.
@@ -204,9 +211,9 @@
             <div class="retail">
                 <img src="assets/img/retail.png" alt="processing" class="rounded-md">
 
-                <h2 class="text-5xl font-semibold border-b py-8 my-8">Retail</h2>
+                <h2 class="text-5xl font-semibold border-b py-8 md:my-8 my-6">Retail</h2>
 
-                <p class="text-white font-normal">The spread of our retail points <br> makes our product 
+                <p class="text-white text-lg font-normal">The spread of our retail points <br> makes our product 
                     very easy to <br> access.</p>
             </div>
         </div>
@@ -216,52 +223,53 @@
     <section id="callToAct" class="relative pb-10" >
         <div class="max-w-6xl mx-auto">
             <div class="md:flex items-center">
-                <div class='w-2/4 pt-24 pb-0'>
+                <div class='md:w-2/4 pt-24 pb-0 px-5 md:px-0 text-center md:text-left'>
                     <h2 class="text-6xl text-white font-semibold">
                         Simple way <br> to order your <br> chicken faster
                     </h2>
 
-                    <p class="my-8 text-white text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Nulla ac erat nibh. Ut molestie dictum dui, vitae sodales <br> nisi tincidunt quis. </p>
+                    <p class="my-8 text-white text-lg md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br class="hidden md:block"> Nulla ac erat nibh. Ut molestie dictum dui, vitae sodales <br class="hidden md:block"> nisi tincidunt quis. </p>
 
                     <div>
-                        <button class="py-6 px-10 text-sm rounded-2xl btn-primary flex items-center text-white font-light mr-2">
+                        <button class="py-6 px-8 md:px-10 text-sm rounded-2xl btn-primary flex items-center text-white font-light mr-2">
                             <img src="assets/img/icons/apple.svg" alt="ios" class="inline mr-2">
 
                             <span class="text-xs">
                                 Download on 
                             </span>
                         </button>
-                        <button class="py-6 px-10 text-sm rounded-2xl border border-primary font-light text-white">
+                        <button class="py-6 px-8 md:px-10 text-sm rounded-2xl border border-primary font-light text-white">
                             Get it on Play Store
                         </button>
                     </div>
 
                 </div>
 
-                <div class="w-2/4 ml-6">
-                    <img src="assets/img/app-mock.png" alt="app mock" class="absolute">
+                <div class="md:w-2/4 md:ml-6 mt-8 md:mt-0">
+                    <img src="assets/img/app-mock.png" alt="app mock" class="absolute hidden md:inline">
+                    <img src="assets/img/app-mobile.png" alt="app mock" class="md:hidden">
                 </div>
             </div>
 
             <!-- Stats Section -->
 
-            <div id='stats' class="py-20 mt-10">
-                <div class="max-w-6xl mx-auto bg-white rounded-md py-16 px-20 flex">
-                    <div class="text-center p-10 border-r">
+            <div id='stats' class="py-20 mt-10 px-5 md:px-0">
+                <div class="max-w-6xl mx-auto bg-white rounded-md py-16 px-20 md:flex">
+                    <div class="text-center p-10 md:border-r">
                         <img src="assets/img/icons/chicken.png" alt="chicken icon" class="mx-auto">
                         <p class="text-secondary text-xl mt-8">Numbers of chicken sold</p>
                         
                         <h6 class="text-6xl font-semibold text-secondary mt-4">12k+</h6>
                     </div>
 
-                    <div class="text-center p-10 border-r">
+                    <div class="text-center p-10 md:border-r">
                         <img src="assets/img/icons/eggs.png" alt="egg icon" class="mx-auto">
                         <p class="text-secondary text-xl mt-8">Numbers of eggs sold</p>
                         
                         <h6 class="text-6xl font-semibold text-secondary mt-4">56k+</h6>
                     </div>
 
-                    <div class="text-center p-10 border-r">
+                    <div class="text-center p-10 md:border-r">
                         <img src="assets/img/icons/farmer.png" alt="farmer icon" class="mx-auto">
                         <p class="text-secondary text-xl mt-8">Numbers of farmers employed</p>
                         
@@ -285,7 +293,7 @@
                     <p class="text-xl text-white mt-4">Join our exclusive community</p>
                 </div>
 
-                <div class="subscribe-form py-10 relative flex max-w-5xl mx-auto">
+                <div class="subscribe-form py-10 relative flex justify-center max-w-5xl mx-auto">
                     <input type="email" placeholder="Email address here" class="bg-white px-4 py-5 outline-none text-gray-600">
                     <button class="p-4 bg-primary text-white">Join now</button>
                 </div>
@@ -296,36 +304,44 @@
     <!-- Footer -->
 
     <footer id="main-footer">
-        <div class="max-w-6xl mx-auto pb-8 pt-16 md:flex">
-            <div class="footer-sec">
-                <p class="text-primary text-sm font-semibold mb-3">Company</p>
-                <div>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">About</a>
-                    <a href="faq.html" class="block text-gray-200 text-sm mb-3">FAQ</a>
-                    <a href="login.html" class="block text-gray-200 text-sm mb-3">Get Started</a>
+        <div class="max-w-6xl mx-auto pb-8 pt-14 md:pt-16 md:flex">
+            <div class="flex">
+                <div class="footer-sec flex-1 flex flex-col items-center">
+                    <div>
+                        <p class="text-primary text-sm font-semibold mb-3">Company</p>
+                        <div>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">About</a>
+                            <a href="faq.html" class="block text-gray-200 text-sm mb-3">FAQ</a>
+                            <a href="login.html" class="block text-gray-200 text-sm mb-3">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-sec flex-1 flex flex-col items-center">
+                    <div>
+                        <p class="text-primary text-sm font-semibold mb-3">Support</p>
+                        <div>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Distributorship</a>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Delivery Schedule</a>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Online Enquiry</a>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Get a Call</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-sec">
-                <p class="text-primary text-sm font-semibold mb-3">Support</p>
+            <div class="footer-sec flex flex-col items-center my-6 md:my-0 text-center md:text-left">
                 <div>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Distributorship</a>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Delivery Schedule</a>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Online Enquiry</a>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Get a Call</a>
-                </div>
-            </div>
-
-            <div class="footer-sec">
-                <p class="text-primary text-sm font-semibold mb-3">Contact</p>
-                <div>
-                    <p href="about.html" class="block text-gray-200 text-sm mb-3">
-                        Suite 20 Legislative Arcade, <br>
-                        New Yidi Road, <br>
-                        Ilorin, Kwara State. <br> <br> 
-                        234-811-811-4093 <br> <br>
-                        info@kenfarms.ng
-                    </p>
+                    <p class="text-primary text-sm font-semibold mb-3">Contact</p>
+                    <div>
+                        <p href="about.html" class="block text-gray-200 text-sm mb-3">
+                            Suite 20 Legislative Arcade, <br>
+                            New Yidi Road, <br>
+                            Ilorin, Kwara State. <br> <br> 
+                            234-811-811-4093 <br> <br>
+                            info@kenfarms.ng
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -346,10 +362,10 @@
             </div>
         </div>
 
-        <div class="max-w-6xl mx-auto footer-bottom pt-4 pb-8 border-t border-gray-500 flex justify-between items-center">
-            <p class="text-gray-200 text-sm">Powered by: Agritrust (Irewolede) <br> Agricultural Cooperative Society Limited (LCSC 16936)</p>
+        <div class="max-w-6xl mx-auto footer-bottom pt-4 pb-8 px-5 md:px-0 border-t border-gray-500 flex justify-between items-center">
+            <p class="text-gray-200 text-xs md:text-sm">Powered by: Agritrust (Irewolede) <br class="hidden md:bock"> Agricultural Cooperative Society Limited (LCSC 16936)</p>
 
-            <p class="text-gray-200 text-sm">
+            <p class="text-gray-200 text-xs md:text-sm text-right">
                 Copyright © 2021 Kenfarms and Agrovet Limited [RC - 1607762].  All rights reserved.
             </p>
         </div>

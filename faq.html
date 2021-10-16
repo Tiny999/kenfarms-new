@@ -11,46 +11,54 @@
 </head>
 <body>
     <header class="flex flex-col header-md">
-        <nav class='navbar fixed w-full py-8'>
-            <div class="max-w-5xl mx-auto flex justify-between">
-                <div class="nav-header flex justify-between items-center">
-                    <a href="index.html" class="nav-brand">
+        <nav class='navbar fixed w-full py-8 px-5'>
+            <div class="md:max-w-5xl mx-auto flex justify-between">
+                <div class="nav-header w-full flex justify-between items-center">
+                    <a href="index.html" class="nav-brand inline-block">
                         <img src="assets/img/logo-dark.png" alt="logo">
                     </a>
 
-                    <a href="" class="nav-toggle">
+                    <a href="#" id='nav-toggle' class="nav-toggle">
                         <img src="assets/img/icons/icon-toggle.svg" alt="toggle">
                     </a>
                 </div>
 
                 <div class="nav-menu-wrapper">
-                    <span class="nav-menu-close"></span>
-                    <ul class="nav-menu text-white flex space-x-14">
-                        <li>
+                    <div class="nav-menu-close border-b md:border-0">
+                        <a href="#">
+                            <img src="assets/img/icons/icon-cancel.svg" alt="close">
+                        </a>
+                    </div>
+                    <ul class="nav-menu text-white md:flex md:space-x-14">
+                        <li class="active border-b md:border-0">
                             <a href="index.html">Home</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="about.html">About</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="contact.html">Contact</a>
                         </li>
-                        <li>
+                        <li class=" border-b md:border-0">
                             <a href="blog.html">Blog</a>
                         </li>
-                        <li class="active">
+                        <li class=" border-b md:border-0">
                             <a href="faq.html">FAQ</a>
                         </li>
                     </ul>
+
+                    <div class="mt-auto md:hidden text-center text-white pb-6 text-sm">
+                        <p>©2021 Kenfarms and Agrovet. <br> All Rights Reserved</p>
+                    </div>
                 </div>
 
             </div>
         </nav>
 
         <div class="header-content">
-            <div class="max-w-6xl mx-auto pb-8 pt-32">
+            <div class="max-w-6xl mx-auto pb-8 px-4 md:px-0 pt-32">
                 <div class="text-center text-white">
-                    <h3 class="text-7xl font-semibold">Frequently Asked <br> Questions</h3>
+                    <h3 class="md:text-7xl text-5xl font-semibold">Frequently Asked <br> Questions</h3>
                 </div>
 
                 <div class="subscribe-form py-10 relative flex w-full mx-auto">
@@ -69,13 +77,13 @@
     </header>
 
     <main>
-        <div class="max-w-5xl mx-auto py-32">
+        <div class="max-w-5xl mx-auto py-32 px-10 md:px-0">
             <div class="text-center mb-12">
                 <h6 class="text-3xl text-white font-semibold mb-4">General</h6>
-                <p class="text-lg font-light text-gray-200">KenFarms overriding ambition is to make chicken the most preferred <br> protein source ahead of beef.</p>
+                <p class="text-lg font-light text-gray-200">KenFarms overriding ambition is to make chicken the most preferred <br class="hidden md:block"> protein source ahead of beef.</p>
             </div>  
 
-            <div id="accordion">
+            <div id="accordion" class="px-6 md:px-0">
                 <div class="card">
                     <div class="head">
                       <h2>What is Kenfresh Chickens</h2>
@@ -119,8 +127,8 @@
 
     <section id='furtherHelp'>
         <div class="max-w-4xl mx-auto py-24 text-center">
-            <h1 class="text-white font-semibold text-7xl mb-10">
-                Would you need any <br>further help?
+            <h1 class="text-white font-semibold text-5xl md:text-7xl mb-10">
+                Would you need any <br class="hidden md:block">further help?
             </h1>
             <a href="contact.html" class="py-5 inline-block px-8 rounded-2xl bg-primary text-white">
                 Contact Support
@@ -131,36 +139,44 @@
     <!-- Footer -->
 
     <footer id="main-footer">
-        <div class="max-w-6xl mx-auto pb-8 pt-16 md:flex">
-            <div class="footer-sec">
-                <p class="text-primary text-sm font-semibold mb-3">Company</p>
-                <div>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">About</a>
-                    <a href="faq.html" class="block text-gray-200 text-sm mb-3">FAQ</a>
-                    <a href="login.html" class="block text-gray-200 text-sm mb-3">Get Started</a>
+        <div class="max-w-6xl mx-auto pb-8 pt-14 md:pt-16 md:flex">
+            <div class="flex">
+                <div class="footer-sec flex-1 flex flex-col items-center">
+                    <div>
+                        <p class="text-primary text-sm font-semibold mb-3">Company</p>
+                        <div>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">About</a>
+                            <a href="faq.html" class="block text-gray-200 text-sm mb-3">FAQ</a>
+                            <a href="login.html" class="block text-gray-200 text-sm mb-3">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-sec flex-1 flex flex-col items-center">
+                    <div>
+                        <p class="text-primary text-sm font-semibold mb-3">Support</p>
+                        <div>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Distributorship</a>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Delivery Schedule</a>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Online Enquiry</a>
+                            <a href="about.html" class="block text-gray-200 text-sm mb-3">Get a Call</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer-sec">
-                <p class="text-primary text-sm font-semibold mb-3">Support</p>
+            <div class="footer-sec flex flex-col items-center my-6 md:my-0 text-center md:text-left">
                 <div>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Distributorship</a>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Delivery Schedule</a>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Online Enquiry</a>
-                    <a href="about.html" class="block text-gray-200 text-sm mb-3">Get a Call</a>
-                </div>
-            </div>
-
-            <div class="footer-sec">
-                <p class="text-primary text-sm font-semibold mb-3">Contact</p>
-                <div>
-                    <p href="about.html" class="block text-gray-200 text-sm mb-3">
-                        Suite 20 Legislative Arcade, <br>
-                        New Yidi Road, <br>
-                        Ilorin, Kwara State. <br> <br> 
-                        234-811-811-4093 <br> <br>
-                        info@kenfarms.ng
-                    </p>
+                    <p class="text-primary text-sm font-semibold mb-3">Contact</p>
+                    <div>
+                        <p href="about.html" class="block text-gray-200 text-sm mb-3">
+                            Suite 20 Legislative Arcade, <br>
+                            New Yidi Road, <br>
+                            Ilorin, Kwara State. <br> <br> 
+                            234-811-811-4093 <br> <br>
+                            info@kenfarms.ng
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -181,10 +197,10 @@
             </div>
         </div>
 
-        <div class="max-w-6xl mx-auto footer-bottom pt-4 pb-8 border-t border-gray-500 flex justify-between items-center">
-            <p class="text-gray-200 text-sm">Powered by: Agritrust (Irewolede) <br> Agricultural Cooperative Society Limited (LCSC 16936)</p>
+        <div class="max-w-6xl mx-auto footer-bottom pt-4 pb-8 px-5 md:px-0 border-t border-gray-500 flex justify-between items-center">
+            <p class="text-gray-200 text-xs md:text-sm">Powered by: Agritrust (Irewolede) <br class="hidden md:bock"> Agricultural Cooperative Society Limited (LCSC 16936)</p>
 
-            <p class="text-gray-200 text-sm">
+            <p class="text-gray-200 text-xs md:text-sm text-right">
                 Copyright © 2021 Kenfarms and Agrovet Limited [RC - 1607762].  All rights reserved.
             </p>
         </div>
